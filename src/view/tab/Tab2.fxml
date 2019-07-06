@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.tab.Tab2Controller">
+   <children>
+      <SplitPane dividerPositions="0.6984924623115578" layoutX="170.0" layoutY="37.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="300.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="221.0" prefWidth="498.0">
+               <children>
+                  <Label fx:id="chooseWebLabel" layoutX="44.0" layoutY="38.0" text="Choose websites to search:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <CheckBox fx:id="chkBoxGoogle" layoutX="65.0" layoutY="73.0" mnemonicParsing="false" text="         Google Images" />
+                  <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="94.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/social-google-box-icon.png" />
+                     </image>
+                  </ImageView>
+                  <CheckBox fx:id="chkBoxPicSearch" layoutX="64.0" layoutY="121.0" mnemonicParsing="false" text="  " />
+                  <ImageView fitHeight="38.0" fitWidth="86.0" layoutX="93.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/200px-Picsearch_Logo.png" />
+                     </image>
+                  </ImageView>
+                  <CheckBox fx:id="chkBoxLmgr" layoutX="64.0" layoutY="172.0" mnemonicParsing="false" text="  " />
+                  <ImageView fitHeight="48.0" fitWidth="106.0" layoutX="89.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/lomography_logo.jpg" />
+                     </image>
+                  </ImageView>
+                  <CheckBox fx:id="chkBoxFS" layoutX="64.0" layoutY="217.0" mnemonicParsing="false" text=" " />
+                  <ImageView fitHeight="25.0" fitWidth="132.0" layoutX="89.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/logo_photoshelter.gif" />
+                     </image>
+                  </ImageView>
+                  <CheckBox fx:id="chkBoxDeviant" layoutX="317.0" layoutY="73.0" mnemonicParsing="false" text="  " />
+                  <ImageView fitHeight="25.0" fitWidth="106.0" layoutX="345.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/DeviantArt_2014.png" />
+                     </image>
+                  </ImageView>
+                  <CheckBox fx:id="chkBoxImgur" layoutX="317.0" layoutY="121.0" mnemonicParsing="false" text="  " />
+                  <ImageView fitHeight="30.0" fitWidth="76.0" layoutX="345.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/800px-Imgur_logo.svg.png" />
+                     </image>
+                  </ImageView>
+                  <CheckBox fx:id="chkBoxWh" layoutX="317.0" layoutY="172.0" mnemonicParsing="false" text="  " />
+                  <ImageView fitHeight="25.0" fitWidth="119.0" layoutX="345.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/wallhaven.png" />
+                     </image>
+                  </ImageView>
+                  <CheckBox fx:id="chkBoxWiki" layoutX="317.0" layoutY="219.0" mnemonicParsing="false" text="  " />
+                  <ImageView fitHeight="45.0" fitWidth="143.0" layoutX="338.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/wikipedia.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Separator blendMode="MULTIPLY" layoutX="296.0" layoutY="-70.0" orientation="VERTICAL" prefHeight="96.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="296.0" AnchorPane.topAnchor="0.0" />
+                  <Button fx:id="btn2search" layoutX="122.0" layoutY="49.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btn2searchClicked" prefHeight="25.0" prefWidth="62.0" text="Search" />
+                  <Button fx:id="btn2save" disable="true" layoutX="406.0" layoutY="49.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btn2saveClicked" prefHeight="25.0" prefWidth="62.0" text="Save" />
+                  <TextField fx:id="txt4" layoutX="359.0" layoutY="14.0" prefHeight="25.0" prefWidth="156.0" promptText="Choose folder..." />
+                  <Button fx:id="btn2browse" layoutX="515.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn2browseClicked" text="Browse..." />
+                  <TextField fx:id="txt3" layoutX="79.0" layoutY="14.0" promptText="Keyword" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

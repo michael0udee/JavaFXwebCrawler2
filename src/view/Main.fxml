@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutX="141.0" layoutY="60.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab fx:id="tab1" closable="false" text="WebContainer">
+               <content>
+                  <fx:include source="tab/Tab1.fxml" />
+               </content>
+          </Tab>
+          <Tab fx:id="tab2" closable="false" text="ImageFinder">
+               <content>
+                  <fx:include source="tab/Tab2.fxml" />
+               </content></Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
